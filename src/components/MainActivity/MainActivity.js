@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
 import Details from '../Details/Details';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../MainActivity/MainActivity.css'
+import Activity from '../Activity/Activity';
 
 
 const MainActivity = () => {
+    const [activities, setActivities] = useState([]);
+    useEffect(() => {
+        fetch('active.json')
+            .then(res => res.json())
+            .then(data => setActivities(data))
+    }, [])
+
+
+
+
+
     return (
         <div className='main-activity-container'>
             <div className='container'>
@@ -17,7 +29,19 @@ const MainActivity = () => {
                             <h1>Mental activities</h1>
                             <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include:</p>
                         </div>
-                        <Activities> </Activities>
+                        <div className='activities-container-data'>
+                            {
+                                activities.map(activitie => <Activities
+                                    key={activitie.id}
+                                    activitie={activitie}
+                                ></Activities>)
+                            }
+
+                        </div>
+
+
+
+
 
 
                     </div>

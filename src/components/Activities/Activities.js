@@ -1,9 +1,22 @@
 import React from 'react';
+import '../Activities/Activities.css'
 
-const Activities = () => {
+const Activities = (props) => {
+    const { name, time, img } = props.activitie;
+
     return (
         <div>
-            <h1>hh</h1>
+            <div className='activity-img'>
+                <img src={img} alt="" />
+            </div>
+
+
+            <div>
+                <h5>{name}</h5>
+                <p>Time required: {time} min</p>
+            </div>
+
+
         </div>
     );
 };
