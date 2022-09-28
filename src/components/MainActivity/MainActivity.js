@@ -3,7 +3,7 @@ import Activities from '../Activities/Activities';
 import Details from '../Details/Details';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../MainActivity/MainActivity.css'
-import Activity from '../Activity/Activity';
+
 
 
 const MainActivity = () => {
@@ -27,7 +27,8 @@ const MainActivity = () => {
 
                         <div>
                             <h1>Mental activities</h1>
-                            <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include:</p>
+                            <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include</p>
+                            <h5>Select today's exercise:</h5>
                         </div>
                         <div className='activities-container-data'>
                             {

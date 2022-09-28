@@ -5,7 +5,7 @@ const Activities = (props) => {
     const { name, time, img } = props.activitie;
 
     return (
-        <div>
+        <div className='all-activity'>
             <div className='activity-img'>
                 <img src={img} alt="" />
             </div>

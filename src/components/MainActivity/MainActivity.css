@@ -1,3 +1,7 @@
+.main-activity-container{
+    text-align: start;
+}
+
 .activity-row{
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -7,4 +11,8 @@
     grid-template-columns: repeat(3,1fr);
     gap: 45px;
     margin: 50px 30px;
+}
+
+.activity-list-container{
+    background-color: #E5E4E2;
 }
