@@ -1,5 +1,6 @@
 .main-activity-container{
     text-align: start;
+    background-color: #E5E4E2;
 }
 
 .activity-row{
@@ -14,5 +15,9 @@
 }
 
 .activity-list-container{
-    background-color: #E5E4E2;
+   
+}
+
+.activity-details-container{
+    background-color: white;
 }

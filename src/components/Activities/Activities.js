@@ -15,6 +15,10 @@ const Activities = (props) => {
                 <h5>{name}</h5>
                 <p>Time required: {time} min</p>
             </div>
+            <div>
+                <button>Add To list
+                </button>
+            </div>
 
 
         </div>

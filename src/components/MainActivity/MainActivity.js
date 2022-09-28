@@ -40,11 +40,6 @@ const MainActivity = () => {
 
                         </div>
 
-
-
-
-
-
                     </div>
                     <div className='activity-details-container cal-4'>
                         <Details> </Details>
