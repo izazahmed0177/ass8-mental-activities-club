@@ -3,6 +3,10 @@ import '../Details/Details.css'
 import '../Details/fakedb'
 import { addToDb, getStoredBreak } from '../Details/fakedb';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// toast.configure()
 const Details = (props) => {
     const { details } = props;
     // console.log(details);
@@ -20,28 +24,16 @@ const Details = (props) => {
         // console.log(storeBrack);
         const saveBreak = [];
         for (const id in storeBrack) {
-            console.log(id);
+            // console.log(id);
             saveBreak.push(id)
         }
 
-        console.log(saveBreak)
+        // console.log(saveBreak)
         setBrack(saveBreak);
 
 
     }, [])
 
-
-
-
-
-
-
-
-
-    // console.log(brack);
-
-
-    // const inputRef = useRef(null);
     let activitiesTime = 0;
     let breakTime = brack;
 
@@ -50,29 +42,11 @@ const Details = (props) => {
         activitiesTime = activitiesTime + activity.time;
     }
 
-
-    // function handleClick(e) {
-    //     // console.log(inputRef.current.value);
-    //     // let value = 0;
-    //     // console.log(value)
-    //     // console.log(e.target.value);
-    //     console.log(e.value);
-    // }
-
-    // let breakTimeloclal = {};
-
-    // addToDb(brack)
-    // localStorage.setItem('breakTimeloclal', JSON.stringify(brack));
-
-    // const addToDb = (brack) => {
-    //     let breakTime = {};
-
-
-    // localStorage.setItem('breakTime', JSON.stringify(breakTime));
-
-    // const localtime = localStorage.getItem('breakTime')
-    // console.log(localtime)
-    // }
+    const showToastMessage = () => {
+        toast.success('Activity Completed in Time !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
 
 
 
@@ -160,7 +134,8 @@ const Details = (props) => {
 
             <div className='mt-3 text-center p-3 '>
 
-                <button type="button" className="btn btn-primary px-5 py-2">Activity Completed</button>
+                <button onClick={showToastMessage} type="button" className="btn btn-primary px-5 py-2">Activity Completed</button>
+                <ToastContainer />
             </div>
 
 
