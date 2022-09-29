@@ -3,6 +3,7 @@
   {
     "id": "1a", 
     "name": "Meditating",
+    "text":"We will walk you through how to meditate properly, the benefits of regular meditation practice, and the various styles of meditation.",
     "time": 30,   
     "img": "https://images.unsplash.com/photo-1602199664106-9f54198baac3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
     
@@ -11,6 +12,7 @@
   {
     "id": "2b",  
     "name": "Studying for an Exam",
+    "text":"If you have kept a good daily and weekly schedule, 15-20 hours should be about right for a mid-term, 20-30 for a final exam. Major papers take substantially more time and effort.",
     "time": 120,  
     "img": "https://images.unsplash.com/photo-1604872441539-ef1db9b25f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     
@@ -19,6 +21,7 @@
   {
     "id": "3c",
     "name": "Completing an Assignment",
+    "text":"Steps for completing an assignment · First, carefully read the assignment. · Conduct any necessary research to find information to include in your assignment.",
     "time": 60,
     "img": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     
@@ -27,6 +30,7 @@
   {
     "id": "4d",
     "name": "Reading a Textbook",
+    "text":"It can reduce stress, improve your mental health, and help you live longer. Reading also allows you to learn new things to help you succeed in your work and relationships.",
     "time": 70,
     "img": "https://images.unsplash.com/photo-1619878561023-acfe05dce6bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     
@@ -35,6 +39,7 @@
   {
     "id": "5f",
     "name": "Writing an Article",
+    "text":"Circling back to your main point is the most straightforward way to wrap up your article. Simply reiterate your main point with slightly different verbiage.",
     "time": 50,
     "img": "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
     
@@ -42,7 +47,8 @@
 
   {
     "id": "6g",
-    "name": "Editing a Video",  
+    "name": "Editing a Video", 
+    "text":"Define a cloud-based workflow once - and apply it to hundreds or even thousands of videos. Sign up for a free test of our node based video engine to generate all videos you need.", 
     "time": 80,
     "img": "https://images.unsplash.com/photo-1616160232762-91cd5b3c6170?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     
@@ -51,6 +57,7 @@
   {
     "id": "7h",
     "name": "Learning a New Skill",
+    "text":"If you engage in a new skill, you're going to thicken the brain's prefrontal cortex,” says Buttimer. “As you develop a new skill, you'll gain courage and confidence",
     "time": 90,
     "img": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     
@@ -59,6 +66,7 @@
   {
     "id": "8i",
     "name": "Journalling",
+    "text":"Now it's called journaling. It's simply writing down your thoughts and feelings to understand them more clearly. And if you struggle with stress, depression",
     "time": 30,
     "img": "https://images.unsplash.com/photo-1599837487527-e009248aa71b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     

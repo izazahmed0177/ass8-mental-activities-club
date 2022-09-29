@@ -2,7 +2,7 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div>
+        <div className='container text-start'>
             <div>
                 <h1>1.How does react work ?</h1>
                 <p>ReactJS is one of the most popular JavaScript libraries for mobile and web application development. Created by Facebook, React contains a collection of reusable JavaScript code snippets used for user interface (UI) building called components.</p>
@@ -44,6 +44,22 @@ const Question = () => {
                     4.State cannot be accessed by child components.
                     <br />
                     5.States can be used for rendering dynamic changes with the component.
+
+                </p>
+            </div>
+            <div >
+                <h1>3.How the useEffect Hook Works?</h1>
+                <p>The useEffect hook is the Swiss Army knife of all the hooks. It's the solution to many problems: how to fetch data when a component mounts, how to run code when state changes or when a prop changes, how to set up timers or intervals, you name it.
+                    <br />
+                    Pretty much anything you want to “do” in a React component other than return JSX (any sort of side effect), will go into a useEffect. (and you can have more than one useEffect per component, too)
+                    <br />
+                    All this power comes with a tradeoff: useEffect can be confusing until you understand how it works.
+                    <br />
+                    In this post, we're going to look at lots of useEffect examples so that you understand the mental model and can use it effectively in your own code.</p>
+
+                <p> By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates. In this effect, we set the document title, but we could also perform data fetching or call some other imperative API.</p>
+                <p>Placing useEffect inside the component lets us access the count state variable (or any props) right from the effect. We don't need a special API to read it — it's already in the function scope. Hooks embrace JavaScript closures and avoid introducing React-specific APIs where JavaScript already provides a solution.</p>
+                <p>By default, it runs both after the first render and after every update. (We will later talk about how to customize this.) Instead of thinking in terms of “mounting” and “updating”, you might find it easier to think that effects happen “after render”. React guarantees the DOM has been updated by the time it runs the effects.
 
                 </p>
             </div>
