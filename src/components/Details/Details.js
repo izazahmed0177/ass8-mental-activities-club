@@ -1,7 +1,18 @@
 import React from 'react';
 import '../Details/Details.css'
 
-const Details = () => {
+const Details = (props) => {
+    const { details } = props;
+
+    let activitiesTime = 0;
+    let breakTime = 0;
+    // for (const activity of details) {
+    //     // activitiesTime = activitiesTime + activity.activitiesTime;
+    // }
+
+
+
+
     return (
         <div>
             <div className='d-flex flex-row p-4 personal-info-name item-flex'>
@@ -46,11 +57,6 @@ const Details = () => {
                     <p className='text-center pt-3'>50min</p></div>
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
                     <p className='text-center pt-3'>60min</p></div>
-                {/* <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>30min</div>
-                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>40min</div>
-                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>50min</div>
-                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>60min</div>
-                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>55min</div> */}
 
             </div>
 
@@ -63,7 +69,7 @@ const Details = () => {
                     <h5>Activities time</h5>
                 </div>
                 <div className='m-3'>
-                    <p>120 min</p>
+                    <p>{activitiesTime} min</p>
                 </div>
 
             </div>
@@ -73,7 +79,7 @@ const Details = () => {
                     <h5>Break time</h5>
                 </div>
                 <div className='m-3'>
-                    <p>120 min</p>
+                    <p>{breakTime} min</p>
                 </div>
 
             </div>

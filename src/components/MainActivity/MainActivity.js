@@ -8,12 +8,20 @@ import '../MainActivity/MainActivity.css'
 
 const MainActivity = () => {
     const [activities, setActivities] = useState([]);
+    const [details, setDetails] = useState([])
+
+
     useEffect(() => {
         fetch('active.json')
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
 
+    ///
+    const handleAddActivity = (selectActivity) => {
+        console.log(selectActivity);
+
+    }
 
 
 
@@ -40,6 +48,7 @@ const MainActivity = () => {
                                         activities.map(activitie => <Activities
                                             key={activitie.id}
                                             activitie={activitie}
+                                            handleAddActivity={handleAddActivity}
                                         ></Activities>)
                                     }
 
@@ -56,7 +65,7 @@ const MainActivity = () => {
 
 
                     <div className='activity-details-container col-lg-4 col-4 col-md-12 col-sm-12 col-xs-12'>
-                        <Details> </Details>
+                        <Details details={details}> </Details>
                     </div>
 
                 </div>
