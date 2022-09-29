@@ -4,6 +4,9 @@ import Details from '../Details/Details';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../MainActivity/MainActivity.css'
 
+import { faSquarePersonConfined } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 const MainActivity = () => {
@@ -36,7 +39,14 @@ const MainActivity = () => {
                     <div className='activity-list-container col-lg-8 col-8 col-md-8 col-sm-12 col-xs-12 mx-0'>
 
                         <div className='p-5'>
-                            <h3 className='text-primary'>Mental activities</h3>
+
+                            <h3 className='text-primary'>
+
+                                <FontAwesomeIcon icon={faSquarePersonConfined}></FontAwesomeIcon>
+                                {/* <FontAwesomeIcon icon="fa-solid fa-square-person-confined" /> */}
+
+
+                                Mental activities</h3>
                             <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include</p>
                             <h5>Select today's exercise:</h5>
                         </div>
