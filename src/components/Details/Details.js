@@ -1,14 +1,71 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../Details/Details.css'
+import '../Details/fakedb'
+import { addToDb } from '../Details/fakedb';
 
 const Details = (props) => {
     const { details } = props;
+    // console.log(details);
 
+
+    const [brack, setBrack] = useState([])
+    const brackNum = numberBrack => {
+        setBrack(numberBrack);
+        addToDb(numberBrack);
+
+    }
+
+    useEffect(() => {
+
+
+
+    }, [])
+
+
+
+
+
+
+
+
+
+    // console.log(brack);
+
+
+    // const inputRef = useRef(null);
     let activitiesTime = 0;
-    let breakTime = 0;
-    // for (const activity of details) {
-    //     // activitiesTime = activitiesTime + activity.activitiesTime;
+    let breakTime = brack;
+
+
+    for (const activity of details) {
+        activitiesTime = activitiesTime + activity.time;
+    }
+
+
+    // function handleClick(e) {
+    //     // console.log(inputRef.current.value);
+    //     // let value = 0;
+    //     // console.log(value)
+    //     // console.log(e.target.value);
+    //     console.log(e.value);
     // }
+
+    // let breakTimeloclal = {};
+
+    // addToDb(brack)
+    // localStorage.setItem('breakTimeloclal', JSON.stringify(brack));
+
+    // const addToDb = (brack) => {
+    //     let breakTime = {};
+
+
+    // localStorage.setItem('breakTime', JSON.stringify(breakTime));
+
+    // const localtime = localStorage.getItem('breakTime')
+    // console.log(localtime)
+    // }
+
+
 
 
 
@@ -48,15 +105,22 @@ const Details = (props) => {
 
             <div className='row p-2 break-time-continear item-flex fs-6 m-0 rounded mt-3'>
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
-                    <p className='text-center pt-3'>20min</p></div>
+                    {/* <p className='text-center pt-3'><a onClick={(e) => handleClick(e, "value")} className='btn' value={"20"}>20min</a></p></div> */}
+
+                    <p className='text-center pt-3'><a onClick={() => brackNum(20)} className='btn' value='20'>20min</a></p></div>
+
+
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
-                    <p className='text-center pt-3'>30min</p></div>
+                    <p className='text-center pt-3'><a onClick={() => brackNum(30)} className='btn'>30min</a></p></div>
+
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
-                    <p className='text-center pt-3'>40min</p></div>
+                    <p className='text-center pt-3'><a onClick={() => brackNum(40)} className='btn'>40min</a></p></div>
+
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
-                    <p className='text-center pt-3'>50min</p></div>
+                    <p className='text-center pt-3'><a onClick={() => brackNum(50)} className='btn'>50min</a></p></div>
+
                 <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
-                    <p className='text-center pt-3'>60min</p></div>
+                    <p className='text-center pt-3'><a onClick={() => brackNum(60)} className='btn'>60min</a></p></div>
 
             </div>
 

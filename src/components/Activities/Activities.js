@@ -25,24 +25,6 @@ const Activities = ({ activitie, handleAddActivity }) => {
             {/*  */}
 
 
-
-
-            {/* <div className='activity-img'>
-                <img src={img} alt="" />
-            </div> */}
-
-
-            {/* <div>
-                <h5>{name}</h5>
-                <p>Time required: {time} min</p>
-            </div>
-            <div>
-                <button type="button" className="btn btn-primary">Add To list
-                </button>
-
-            </div> */}
-
-
         </div>
     );
 };

@@ -20,6 +20,8 @@ const MainActivity = () => {
     ///
     const handleAddActivity = (selectActivity) => {
         console.log(selectActivity);
+        const newActivity = [...details, selectActivity]
+        setDetails(newActivity)
 
     }
 
