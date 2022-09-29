@@ -1,0 +1,33 @@
+.item-flex{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between */
+}
+
+.personal-info-name{
+   
+}
+
+.personal-img img{
+   height: 80px;
+   width: 80px;
+   border: 5px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.personal-info{
+   
+
+}
+.break-time-continear{
+
+   
+}
+
+.activities-time{
+
+}

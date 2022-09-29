@@ -20,28 +20,42 @@ const MainActivity = () => {
 
     return (
         <div className='main-activity-container'>
-            <div className='container'>
+            <div className=''>
                 <div className='row activity-row'>
 
-                    <div className='activity-list-container cal-12'>
+                    <div className='activity-list-container col-8'>
 
                         <div>
                             <h1>Mental activities</h1>
                             <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include</p>
                             <h5>Select today's exercise:</h5>
                         </div>
-                        <div className='activities-container-data'>
-                            {
-                                activities.map(activitie => <Activities
-                                    key={activitie.id}
-                                    activitie={activitie}
-                                ></Activities>)
-                            }
 
+                        <div className='activities-container-data'>
+                            <div className='container'>
+                                <div className='row m-3'>
+
+
+                                    {
+                                        activities.map(activitie => <Activities
+                                            key={activitie.id}
+                                            activitie={activitie}
+                                        ></Activities>)
+                                    }
+
+                                </div>
+                            </div>
+
+
+
+
+                            {/*  */}
                         </div>
 
                     </div>
-                    <div className='activity-details-container cal-4'>
+
+
+                    <div className='activity-details-container col-4'>
                         <Details> </Details>
                     </div>
 

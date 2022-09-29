@@ -1,14 +1,25 @@
 .all-activity{
-    background-color: white;
+    /* background-color: white; */
 }
 
 .activity-img img{
-    width: 300px;
+    /* width: 300px;
     height: 510px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    margin: 7px;
+    margin: 7px; */
+}
+
+.card{
+    /* style="width: 18rem; */
+    width: 18rem;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+
 }

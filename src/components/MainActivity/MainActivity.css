@@ -4,20 +4,23 @@
 }
 
 .activity-row{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 300px; */
 }
 .activities-container-data{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 45px;
-    margin: 50px 30px;
-}
+     /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    /* gap: 45px; */
+    /* margin: 50px 30px; 
+    padding: 15px;  */
+} 
 
 .activity-list-container{
+   
    
 }
 
 .activity-details-container{
+    
     background-color: white;
 }
