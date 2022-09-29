@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Details/Details.css'
 import '../Details/fakedb'
-import { addToDb } from '../Details/fakedb';
+import { addToDb, getStoredBreak } from '../Details/fakedb';
 
 const Details = (props) => {
     const { details } = props;
@@ -16,7 +16,16 @@ const Details = (props) => {
     }
 
     useEffect(() => {
+        const storeBrack = getStoredBreak();
+        // console.log(storeBrack);
+        const saveBreak = [];
+        for (const id in storeBrack) {
+            console.log(id);
+            saveBreak.push(id)
+        }
 
+        console.log(saveBreak)
+        setBrack(saveBreak);
 
 
     }, [])
