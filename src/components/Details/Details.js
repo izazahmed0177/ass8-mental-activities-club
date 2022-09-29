@@ -16,17 +16,17 @@ const Details = () => {
                 </div>
             </div>
 
-            <div className='d-flex flex-row p-4 personal-info item-flex'>
+            <div className='d-flex flex-row p-4 personal-info item-flex '>
                 <div className='p-3'>
-                    <h1>77 <small>kg</small></h1>
+                    <h4>77 <span className='fs-6'>kg</span></h4>
                     <p>Weight</p>
                 </div>
                 <div className='p-3'>
-                    <h1>6.5</h1>
+                    <h4>6.5</h4>
                     <p>Hight</p>
                 </div>
                 <div className='p-3'>
-                    <h1>25 <small>yrs</small></h1>
+                    <h4>25 <span className='fs-6'>yrs</span></h4>
                     <p>Age</p>
                 </div>
             </div>
@@ -35,12 +35,22 @@ const Details = () => {
                 <h4>Add A Break</h4>
             </div>
 
-            <div className='d-flex flex-row p-4 break-time-continear item-flex'>
-                <div className='p-3'>20min</div>
-                <div className='p-3'>30min</div>
-                <div className='p-3'>400min</div>
-                <div className='p-3'>50min</div>
-                <div className='p-3'>60min</div>
+            <div className='row p-2 break-time-continear item-flex fs-6 m-0'>
+                <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
+                    <p className='text-center pt-3'>20min</p></div>
+                <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
+                    <p className='text-center pt-3'>30min</p></div>
+                <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
+                    <p className='text-center pt-3'>40min</p></div>
+                <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
+                    <p className='text-center pt-3'>50min</p></div>
+                <div className='col-2  bg-white p-0 m-1 fs-6 text-center justify-item-center rounded-circle'>
+                    <p className='text-center pt-3'>60min</p></div>
+                {/* <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>30min</div>
+                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>40min</div>
+                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>50min</div>
+                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>60min</div>
+                <div className='col-2  bg-white p-2 m-2 fs-6 rounded-circle'>55min</div> */}
 
             </div>
 
@@ -48,7 +58,7 @@ const Details = () => {
                 <h4>Mental Activities Details</h4>
             </div>
 
-            <div className='d-flex flex-row p-4 activities-time item-flex'>
+            <div className='d-flex flex-row p-4 activities-time m-3 item-flex'>
                 <div>
                     <h5>Activities time</h5>
                 </div>
@@ -58,7 +68,7 @@ const Details = () => {
 
             </div>
 
-            <div className='d-flex flex-row p-4 break-time item-flex'>
+            <div className='d-flex flex-row p-4 break-time item-flex m-3'>
                 <div>
                     <h5>Break time</h5>
                 </div>

@@ -20,14 +20,20 @@
 }
 
 .personal-info{
-   
+    background-color: #E5E4E2;
 
 }
 .break-time-continear{
 
-   
+    background-color: #E5E4E2;
+    margin: 3px;
 }
 
 .activities-time{
-
+    background-color: #E5E4E2;
+    margin: 3px;
+}
+.break-time{
+    background-color: #E5E4E2;
+    margin: 3px;
 }

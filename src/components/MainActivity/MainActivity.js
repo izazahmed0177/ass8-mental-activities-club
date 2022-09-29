@@ -23,17 +23,17 @@ const MainActivity = () => {
             <div className=''>
                 <div className='row activity-row'>
 
-                    <div className='activity-list-container col-8'>
+                    <div className='activity-list-container col-lg-8 col-8 col-md-8 col-sm-12 col-xs-12 mx-0'>
 
-                        <div>
-                            <h1>Mental activities</h1>
+                        <div className='p-5'>
+                            <h3 className='text-primary'>Mental activities</h3>
                             <p>Mental activities are things that primarily require cognitive effort to complete. Some example of mental activities include</p>
                             <h5>Select today's exercise:</h5>
                         </div>
 
                         <div className='activities-container-data'>
                             <div className='container'>
-                                <div className='row m-3'>
+                                <div className='row m-3 mx-0'>
 
 
                                     {
@@ -55,7 +55,7 @@ const MainActivity = () => {
                     </div>
 
 
-                    <div className='activity-details-container col-4'>
+                    <div className='activity-details-container col-lg-4 col-4 col-md-12 col-sm-12 col-xs-12'>
                         <Details> </Details>
                     </div>
 
