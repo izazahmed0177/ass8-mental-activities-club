@@ -5,15 +5,19 @@ const Activities = (props) => {
     const { name, time, img } = props.activitie;
 
     return (
-        <div className='col-lg-4 col-md-6 col-sm-12 col-xs-12 all-activity '>
+        <div className='col-lg-4 col-md-6 col-sm-12 col-xs-12 all-activity mt-3'>
 
             {/*  */}
             <div className="card">
                 <img src={img} className="img-fluid card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">{name}</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a className="btn btn-primary">Go somewhere</a>
+                    <h6>Time required : {time} min</h6>
+                    <div className='text-center mt-3'>
+                        <a className="btn btn-primary px-5 py-2">Add to list</a>
+                    </div>
+
                 </div>
             </div>
 
